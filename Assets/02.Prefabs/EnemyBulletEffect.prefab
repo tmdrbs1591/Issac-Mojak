@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 827977492361807835}
   - component: {fileID: 827977492361807834}
   m_Layer: 0
-  m_Name: tears effect
+  m_Name: EnemyBulletEffect
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -75,7 +75,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 5
   m_Sprite: {fileID: -1009294917, guid: 5d449a3494bf4404982cbff4ee5a3a27, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 0, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0

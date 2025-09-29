@@ -9,6 +9,10 @@ public class GameManager : MonoBehaviour
     public CinemachineConfiner2D confiner;
 
     public int nomalDoorCount;
+    public int maxDoorCount;
+
+    public int goldenDoorCount;
+
 
     public bool isTeleport = false;
     private void Awake()

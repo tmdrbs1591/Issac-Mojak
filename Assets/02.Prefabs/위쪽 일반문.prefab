@@ -1164,6 +1164,13 @@ MonoBehaviour:
     doorPos: {fileID: 7609137980482357911}
   - door: {fileID: 371126662622746118, guid: 5316dae063ac2174185a26ef47e2a04b, type: 3}
     doorPos: {fileID: 538795948800922437}
+  GoldDoors:
+  - door: {fileID: 8759532353307392150, guid: 7e065c98d3fca7c4aaf3427df28671fc, type: 3}
+    doorPos: {fileID: 2075870747392114941}
+  - door: {fileID: 441516751043125516, guid: 0373d778896226f40b6f9342db1c7a73, type: 3}
+    doorPos: {fileID: 7609137980482357911}
+  - door: {fileID: 5741326860076587922, guid: 95cdf9f612d83d3458c35b571b4e9116, type: 3}
+    doorPos: {fileID: 538795948800922437}
 --- !u!1 &8259555920673225073
 GameObject:
   m_ObjectHideFlags: 0

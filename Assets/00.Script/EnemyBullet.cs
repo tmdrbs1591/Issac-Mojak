@@ -2,11 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Tears : MonoBehaviour
+public class EnemyBullet : MonoBehaviour
 {
     [SerializeField] private float delay;
     [SerializeField] private GameObject effect;
-    [SerializeField] private float damage = 1f; // 눈물이 주는 데미지 값
+    [SerializeField] private float damage = 1f;
 
     private void Start()
     {
@@ -26,16 +26,7 @@ public class Tears : MonoBehaviour
         {
             SpawnEffect();
         }
-        else
-        {
-            // Damaged 인터페이스를 가진 대상이라면 데미지 주기
-            Damaged damagedTarget = collision.GetComponent<Damaged>();
-            if (damagedTarget != null)
-            {
-                damagedTarget.TakeDamage(damage);
-                SpawnEffect();
-            }
-        }
+        
     }
 
     private void SpawnEffect()

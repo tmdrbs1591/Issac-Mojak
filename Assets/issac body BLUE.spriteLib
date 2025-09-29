@@ -1,0 +1,166 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &1
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5e6fedc2472449cead18ef23b5cb30d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Library:
+  - m_Name: idle
+    m_Hash: 472167701
+    m_CategoryList: []
+    m_OverrideEntries:
+    - m_Name: PC _ Computer - The Binding of Isaac_ Rebirth - Playable Characters
+        - Isaac_44
+      m_Hash: 16226943
+      m_Sprite: {fileID: 1070009764, guid: cadd5e1ce9727ae49a3ef8a95895b224, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 1070009764, guid: cadd5e1ce9727ae49a3ef8a95895b224, type: 3}
+    m_FromMain: 0
+    m_EntryOverrideCount: 1
+  - m_Name: FrontWalk
+    m_Hash: 708961936
+    m_CategoryList: []
+    m_OverrideEntries:
+    - m_Name: PC _ Computer - The Binding of Isaac_ Rebirth - Playable Characters
+        - Isaac_44
+      m_Hash: 16226943
+      m_Sprite: {fileID: 93637001, guid: cadd5e1ce9727ae49a3ef8a95895b224, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 93637001, guid: cadd5e1ce9727ae49a3ef8a95895b224, type: 3}
+    - m_Name: PC _ Computer - The Binding of Isaac_ Rebirth - Playable Characters
+        - Isaac_45
+      m_Hash: 938519273
+      m_Sprite: {fileID: -1305129336, guid: cadd5e1ce9727ae49a3ef8a95895b224, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1305129336, guid: cadd5e1ce9727ae49a3ef8a95895b224, type: 3}
+    - m_Name: PC _ Computer - The Binding of Isaac_ Rebirth - Playable Characters
+        - Isaac_46
+      m_Hash: 788134739
+      m_Sprite: {fileID: 965397688, guid: cadd5e1ce9727ae49a3ef8a95895b224, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 965397688, guid: cadd5e1ce9727ae49a3ef8a95895b224, type: 3}
+    - m_Name: PC _ Computer - The Binding of Isaac_ Rebirth - Playable Characters
+        - Isaac_47
+      m_Hash: 436128709
+      m_Sprite: {fileID: -519719753, guid: cadd5e1ce9727ae49a3ef8a95895b224, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -519719753, guid: cadd5e1ce9727ae49a3ef8a95895b224, type: 3}
+    - m_Name: PC _ Computer - The Binding of Isaac_ Rebirth - Playable Characters
+        - Isaac_48
+      m_Hash: 155309652
+      m_Sprite: {fileID: 1385744674, guid: cadd5e1ce9727ae49a3ef8a95895b224, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 1385744674, guid: cadd5e1ce9727ae49a3ef8a95895b224, type: 3}
+    m_FromMain: 0
+    m_EntryOverrideCount: 5
+  - m_Name: SideWalk
+    m_Hash: 787848572
+    m_CategoryList: []
+    m_OverrideEntries:
+    - m_Name: PC _ Computer - The Binding of Isaac_ Rebirth - Items - Anti-Gravity
+        (1)_8
+      m_Hash: 468861722
+      m_Sprite: {fileID: -1535356640, guid: cadd5e1ce9727ae49a3ef8a95895b224, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1535356640, guid: cadd5e1ce9727ae49a3ef8a95895b224, type: 3}
+    - m_Name: PC _ Computer - The Binding of Isaac_ Rebirth - Items - Anti-Gravity
+        (1)_9
+      m_Hash: 754283404
+      m_Sprite: {fileID: -891335171, guid: cadd5e1ce9727ae49a3ef8a95895b224, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -891335171, guid: cadd5e1ce9727ae49a3ef8a95895b224, type: 3}
+    - m_Name: PC _ Computer - The Binding of Isaac_ Rebirth - Items - Anti-Gravity
+        (1)_10
+      m_Hash: 413167441
+      m_Sprite: {fileID: 334372735, guid: cadd5e1ce9727ae49a3ef8a95895b224, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 334372735, guid: cadd5e1ce9727ae49a3ef8a95895b224, type: 3}
+    - m_Name: PC _ Computer - The Binding of Isaac_ Rebirth - Items - Anti-Gravity
+        (1)_11
+      m_Hash: 799498183
+      m_Sprite: {fileID: 1153727262, guid: cadd5e1ce9727ae49a3ef8a95895b224, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 1153727262, guid: cadd5e1ce9727ae49a3ef8a95895b224, type: 3}
+    - m_Name: PC _ Computer - The Binding of Isaac_ Rebirth - Items - Anti-Gravity
+        (1)_12
+      m_Hash: 917376637
+      m_Sprite: {fileID: -1768881657, guid: cadd5e1ce9727ae49a3ef8a95895b224, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1768881657, guid: cadd5e1ce9727ae49a3ef8a95895b224, type: 3}
+    - m_Name: PC _ Computer - The Binding of Isaac_ Rebirth - Items - Anti-Gravity
+        (1)_13
+      m_Hash: 27868907
+      m_Sprite: {fileID: 1105638750, guid: cadd5e1ce9727ae49a3ef8a95895b224, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 1105638750, guid: cadd5e1ce9727ae49a3ef8a95895b224, type: 3}
+    - m_Name: PC _ Computer - The Binding of Isaac_ Rebirth - Items - Anti-Gravity
+        (1)_14
+      m_Hash: 533572424
+      m_Sprite: {fileID: 1600560365, guid: cadd5e1ce9727ae49a3ef8a95895b224, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 1600560365, guid: cadd5e1ce9727ae49a3ef8a95895b224, type: 3}
+    - m_Name: PC _ Computer - The Binding of Isaac_ Rebirth - Items - Anti-Gravity
+        (1)_15
+      m_Hash: 684366814
+      m_Sprite: {fileID: 1047206288, guid: cadd5e1ce9727ae49a3ef8a95895b224, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 1047206288, guid: cadd5e1ce9727ae49a3ef8a95895b224, type: 3}
+    - m_Name: PC _ Computer - The Binding of Isaac_ Rebirth - Items - Anti-Gravity
+        (1)_16
+      m_Hash: 834914916
+      m_Sprite: {fileID: 1600730927, guid: cadd5e1ce9727ae49a3ef8a95895b224, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 1600730927, guid: cadd5e1ce9727ae49a3ef8a95895b224, type: 3}
+    - m_Name: PC _ Computer - The Binding of Isaac_ Rebirth - Items - Anti-Gravity
+        (1)_17
+      m_Hash: 113572594
+      m_Sprite: {fileID: -2009822091, guid: cadd5e1ce9727ae49a3ef8a95895b224, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -2009822091, guid: cadd5e1ce9727ae49a3ef8a95895b224, type: 3}
+    m_FromMain: 0
+    m_EntryOverrideCount: 10
+  - m_Name: BehindWalk
+    m_Hash: 549092584
+    m_CategoryList: []
+    m_OverrideEntries:
+    - m_Name: PC _ Computer - The Binding of Isaac_ Rebirth - Items - Anti-Gravity
+        (1)_18
+      m_Hash: 377218915
+      m_Sprite: {fileID: 1070009764, guid: cadd5e1ce9727ae49a3ef8a95895b224, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 1070009764, guid: cadd5e1ce9727ae49a3ef8a95895b224, type: 3}
+    - m_Name: PC _ Computer - The Binding of Isaac_ Rebirth - Items - Anti-Gravity
+        (1)_19
+      m_Hash: 561829877
+      m_Sprite: {fileID: -1198610165, guid: cadd5e1ce9727ae49a3ef8a95895b224, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1198610165, guid: cadd5e1ce9727ae49a3ef8a95895b224, type: 3}
+    - m_Name: PC _ Computer - The Binding of Isaac_ Rebirth - Items - Anti-Gravity
+        (1)_20
+      m_Hash: 864894098
+      m_Sprite: {fileID: -1757769838, guid: cadd5e1ce9727ae49a3ef8a95895b224, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1757769838, guid: cadd5e1ce9727ae49a3ef8a95895b224, type: 3}
+    - m_Name: PC _ Computer - The Binding of Isaac_ Rebirth - Items - Anti-Gravity
+        (1)_21
+      m_Hash: 76155908
+      m_Sprite: {fileID: 556578751, guid: cadd5e1ce9727ae49a3ef8a95895b224, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 556578751, guid: cadd5e1ce9727ae49a3ef8a95895b224, type: 3}
+    - m_Name: PC _ Computer - The Binding of Isaac_ Rebirth - Items - Anti-Gravity
+        (1)_22
+      m_Hash: 495148478
+      m_Sprite: {fileID: -492333993, guid: cadd5e1ce9727ae49a3ef8a95895b224, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -492333993, guid: cadd5e1ce9727ae49a3ef8a95895b224, type: 3}
+    m_FromMain: 0
+    m_EntryOverrideCount: 5
+  m_PrimaryLibraryGUID: 

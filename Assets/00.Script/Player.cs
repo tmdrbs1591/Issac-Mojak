@@ -23,6 +23,8 @@ public class Player : MonoBehaviour
     private bool isHeadLocked = false; // 머리 애니메이션 잠금 여부
     private Coroutine headLockRoutine;
 
+    public GameObject itemGetSprite;
+    public SpriteRenderer itemSprite;
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -173,5 +175,34 @@ public class Player : MonoBehaviour
     private bool CanFire()
     {
         return Time.time >= lastFireTime + fireCooldown;
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Item"))
+        {
+            var item = collision.gameObject.GetComponent<Item>();
+
+            itemSprite.sprite = collision.gameObject.GetComponent<SpriteRenderer>().sprite;
+            StartCoroutine(ItemGet_Cor());
+            switch (item.itemType)
+            {
+                case ItemType.AntiGravity:
+                    break;
+            }
+            Destroy(collision.gameObject);
+        }
+    }
+
+    IEnumerator ItemGet_Cor()
+    {
+        itemGetSprite.SetActive(true);
+        bodyAnim.gameObject.SetActive(false);
+        headAnim.gameObject.SetActive(false);
+        yield return new WaitForSeconds(1f);
+        itemGetSprite.SetActive(false);
+        bodyAnim.gameObject.SetActive(true);
+        headAnim.gameObject.SetActive(true);
+
     }
 }

@@ -1,53 +1,86 @@
-using System.Collections;
+ï»¿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[System.Serializable] // ÀÎ½ºÆåÅÍ¿¡¼­ º¸ÀÌ°Ô
+[System.Serializable] // ì¸ìŠ¤í™í„°ì—ì„œ ë³´ì´ê²Œ
 public class DoorData
 {
-    public GameObject door;   // ¹® ÇÁ¸®ÆÕ
-    public Transform doorPos; // ¹®ÀÌ ³õÀÏ À§Ä¡
+    public GameObject door;   // ë¬¸ í”„ë¦¬íŒ¹
+    public Transform doorPos; // ë¬¸ì´ ë†“ì¼ ìœ„ì¹˜
+}
+
+[System.Serializable]
+public class GoldDoorData
+{
+    public GameObject door;   // ë¬¸ í”„ë¦¬íŒ¹
+    public Transform doorPos; // ë¬¸ì´ ë†“ì¼ ìœ„ì¹˜
 }
 
 public class DoorSpawn : MonoBehaviour
 {
     public List<DoorData> doors = new List<DoorData>();
+    public List<GoldDoorData> GoldDoors = new List<GoldDoorData>();
+
+    private HashSet<Transform> occupiedPositions = new HashSet<Transform>();
 
     private void Start()
     {
+        // 1. ê³¨ë“  ë¬¸ ë¨¼ì € ìƒì„±
+        SpawnRandomGoldDoors();
+
+        // 2. ê³¨ë“  ë¬¸ ìœ„ì¹˜ë¥¼ ì œì™¸í•˜ê³  ì¼ë°˜ ë¬¸ ìƒì„±
         SpawnRandomDoors();
-
-
     }
+
+    public void SpawnRandomGoldDoors()
+    {
+        if (GoldDoors.Count == 0) return;
+        if (GameManager.instance.goldenDoorCount >= 1) return;
+
+        int rand = Random.Range(0, GoldDoors.Count);
+        GoldDoorData data = GoldDoors[rand];
+
+        if (data.door != null && data.doorPos != null)
+        {
+            Instantiate(data.door, data.doorPos.position, data.door.transform.rotation);
+            GameManager.instance.goldenDoorCount++;
+
+            // ìƒì„±ëœ ìœ„ì¹˜ ê¸°ë¡
+            occupiedPositions.Add(data.doorPos);
+        }
+    }
+
     public void SpawnRandomDoors()
     {
-        if (GameManager.instance.nomalDoorCount >= 2) return;
         if (doors.Count == 0) return;
 
-        GameManager.instance.nomalDoorCount++;
-        // »ı¼ºÇÒ ¹® °³¼ö (2~4)
         int doorCount = Random.Range(2, 5);
 
-        // ¹® ¸®½ºÆ® ÀÎµ¦½º¸¦ ¼¯±â
+        // ì¸ë±ìŠ¤ ì„ê¸°
         List<int> indices = new List<int>();
         for (int i = 0; i < doors.Count; i++) indices.Add(i);
-
         for (int i = 0; i < indices.Count; i++)
         {
             int rand = Random.Range(i, indices.Count);
-            int temp = indices[i];
+            int tmp = indices[i];
             indices[i] = indices[rand];
-            indices[rand] = temp;
+            indices[rand] = tmp;
         }
 
-        // ·£´ıÀ¸·Î ¼±ÅÃµÈ ¹®¸¸ »ı¼º
         for (int i = 0; i < doorCount && i < indices.Count; i++)
         {
+            if (GameManager.instance.nomalDoorCount >= GameManager.instance.maxDoorCount)
+                break;
+
             DoorData data = doors[indices[i]];
             if (data.door != null && data.doorPos != null)
             {
-                // ÇÁ¸®ÆÕ ·ÎÅ×ÀÌ¼Ç ±×´ë·Î »ç¿ë
+                // ê³¨ë“  ë¬¸ ìœ„ì¹˜ì´ë©´ ê±´ë„ˆë›°ê¸°
+                if (occupiedPositions.Contains(data.doorPos))
+                    continue;
+
                 Instantiate(data.door, data.doorPos.position, data.door.transform.rotation);
+                GameManager.instance.nomalDoorCount++;
             }
         }
     }
